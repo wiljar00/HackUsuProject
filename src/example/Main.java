@@ -3,7 +3,6 @@ package example;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -25,7 +24,9 @@ public class Main extends Application {
 
 
         Button btn = new Button();
-        btn.setText("Start Game");
+        btn.setText("Start Game!");
+        btn.setTextFill(Color.BROWN);
+        btn.setPrefSize(200, 50);
         btn.setOnAction(new EventHandler<ActionEvent>() {
 
             @Override
@@ -44,12 +45,12 @@ public class Main extends Application {
 
         ImageView iv2 = new ImageView();
         iv2.setImage(pig);
-        iv2.setFitWidth(200);
+        iv2.setFitWidth(300);
         iv2.setPreserveRatio(true);
         iv2.setSmooth(true);
         iv2.setCache(true);
 
-        VBox box = new VBox(100);
+        VBox box = new VBox(80);
         box.setAlignment(Pos.CENTER);
         box.getChildren().addAll(title, iv2, btn);
 
