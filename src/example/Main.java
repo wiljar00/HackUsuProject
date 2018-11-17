@@ -20,8 +20,9 @@ import javafx.stage.Stage;
 public class Main extends Application {
 
     @Override
-    public void start(Stage primaryStage) {
+    public void start(final Stage primaryStage) {
 
+//        Scene titlePage = new Scene();
 
         Button btn = new Button();
         btn.setText("Start Game!");
@@ -61,11 +62,11 @@ public class Main extends Application {
         StackPane root = new StackPane();
         root.getChildren().add(hbox);
 
-        Scene titlePage = new Scene(root, 556, 720);
-        titlePage.getStylesheets().add("example/css/stylesheet.css");
+        Scene mainScene = new Scene(root, 556, 720);
+        mainScene.getStylesheets().add("example/css/stylesheet.css");
 
         primaryStage.setTitle("Greedy Pig!");
-        primaryStage.setScene(titlePage);
+        primaryStage.setScene(mainScene);
         primaryStage.show();
     }
     public static void main(String[] args) {
