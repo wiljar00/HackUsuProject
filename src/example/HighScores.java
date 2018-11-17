@@ -1,4 +1,4 @@
-package sample;
+package example;
 
 public class HighScores {
 }
