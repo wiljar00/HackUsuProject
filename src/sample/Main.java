@@ -10,7 +10,11 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-public class Main extends Application {
+public class Main extends Application implements EventHandler<ActionEvent>{
+
+    public static void main(String[] args) {
+        launch(args);
+    }
 
     @Override
     public void start(Stage primaryStage) {
@@ -24,19 +28,15 @@ public class Main extends Application {
             }
         });
 
-
-        
-
         StackPane root = new StackPane();
         root.getChildren().add(btn);
 
-        Scene titlePage = new Scene(root, 600, 700);
+        Scene titlePage = new Scene(root, 600, 400);
 
         primaryStage.setTitle("Greedy Pig!");
         primaryStage.setScene(titlePage);
         primaryStage.show();
     }
-    public static void main(String[] args) {
-        launch(args);
-    }
+    
+
 }
