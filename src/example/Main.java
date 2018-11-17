@@ -19,21 +19,38 @@ public class Main extends Application {
 
     private BorderPane rootPane;
 
-
     @Override
     public void start(final Stage primaryStage) {
 
-        Button btn = new Button();
-        btn.setText("Start Game!");
-        btn.setTextFill(Color.BROWN);
-        btn.setPrefSize(200, 50);
-        btn.setOnAction(new EventHandler<ActionEvent>() {
+        Button startBtn = new Button();
+        startBtn.setText("Start Game!");
+        startBtn.setTextFill(Color.BROWN);
+        startBtn.setPrefSize(200, 50);
+        startBtn.setOnAction(new EventHandler<ActionEvent>() {
 
             @Override
             public void handle(ActionEvent event) {
                 System.out.println("Game started......");
                 GamePage game = new GamePage();
+//                HighScores highScores = new HighScores();
                 primaryStage.getScene().setRoot(game.getRootPane());
+//                primaryStage.getScene().setRoot(highScores.getRootPane());
+
+            }
+        });
+        Button highScores = new Button();
+        highScores.setText("High Scores");
+        highScores.setTextFill(Color.BROWN);
+        highScores.setPrefSize(100, 50);
+        highScores.setOnAction(new EventHandler<ActionEvent>() {
+
+            @Override
+            public void handle(ActionEvent event) {
+                System.out.println("High Scores......");
+                GamePage game = new GamePage();
+                HighScores highScores = new HighScores();
+//                primaryStage.getScene().setRoot(game.getRootPane());
+                primaryStage.getScene().setRoot(highScores.getRootPane());
 
             }
         });
@@ -55,7 +72,7 @@ public class Main extends Application {
 
         VBox box = new VBox(80);
         box.setAlignment(Pos.CENTER);
-        box.getChildren().addAll(title, iv2, btn);
+        box.getChildren().addAll(title, iv2, startBtn, highScores);
 
         HBox hbox = new HBox(100);
         hbox.setAlignment(Pos.CENTER);
@@ -71,6 +88,7 @@ public class Main extends Application {
         primaryStage.setScene(mainScene);
         primaryStage.show();
     }
+
     public static void main(String[] args) {
         launch(args);
     }

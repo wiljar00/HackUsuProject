@@ -4,7 +4,10 @@ package example;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
@@ -23,6 +26,17 @@ public class GamePage {
     public GamePage() {
 
         rootPane = new StackPane();
+
+        int globalScore = 0;
+
+        final Image dice = new Image("example/css/dice.jpg");
+
+        final ImageView iv2 = new ImageView();
+        iv2.setImage(dice);
+        iv2.setFitWidth(200);
+        iv2.setPreserveRatio(true);
+        iv2.setSmooth(true);
+        iv2.setCache(true);
 
         Text title = new Text();
         title.setFont(new Font("Arial Rounded MT Bold",65));
@@ -52,11 +66,11 @@ public class GamePage {
             int total = 0;
             @Override
             public void handle(ActionEvent event) {
-                Text score = new Text();
                 Random rand = new Random();
                 int randNum = rand.nextInt(5 + 1) + 1;
                 currentScore.setText("CurrentRoll: "+ randNum);
                 totalScore.setText("Total Score: " + total);
+
                 if (randNum == 1) {
                     currentScore.setText("You lose");
                     System.out.println("You lose");
@@ -79,12 +93,28 @@ public class GamePage {
 
             @Override
             public void handle(ActionEvent event) {
-                System.out.println("Stop pressed, go to title");
-//                GamePage game = new GamePage();
-                rootPane.getScene().setRoot(getRootPane());
+                Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+                alert.setTitle("Game Over!");
+                alert.setHeaderText("Game Over! ");
+                alert.setContentText("Current Score: ");
+                alert.setGraphic(iv2);
+                alert.showAndWait();
 
             }
         });
+
+//        Button highScores = new Button();
+//        highScores.setText("STOP");
+//        highScores.setTextFill(Color.BROWN);
+//        highScores.setPrefSize(100, 50);
+//        highScores.setOnAction(new EventHandler<ActionEvent>() {
+//
+//            @Override
+//            public void handle(ActionEvent event) {
+//                HighScores highScores = new HighScores();
+//                primaryStage.getScene().setRoot(highScores.getRootPane());
+//            }
+//        });
 
 
         VBox box = new VBox(80);
@@ -96,10 +126,6 @@ public class GamePage {
         hbox.getChildren().addAll(box);
 
         rootPane.getChildren().add(hbox);
-
-    }
-
-    private void gameLogic(){
 
     }
 
