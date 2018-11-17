@@ -16,3 +16,9 @@ This is a Single Player Game (2 player option to come in the future.
 To win the game, one must roll the dice and achieve the higest number possible without landing a "1" roll. 
 If the player rolls a "1", the game ends and the score is reset. 
 The player may stop at any time and record their score. 
+
+
+
+# to run:
+There is an executable .JAR file in the artifacts folder built to run the project.
+Located at the directory: HackUsuProject/out/artifacts/HackUsuProject_jar/HackUsuProject.jar
