@@ -8,9 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.StackPane;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
@@ -19,10 +17,11 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
+    private BorderPane rootPane;
+
+
     @Override
     public void start(final Stage primaryStage) {
-
-//        Scene titlePage = new Scene();
 
         Button btn = new Button();
         btn.setText("Start Game!");
@@ -33,6 +32,9 @@ public class Main extends Application {
             @Override
             public void handle(ActionEvent event) {
                 System.out.println("Game started......");
+                GamePage game = new GamePage();
+                primaryStage.getScene().setRoot(game.getRootPane());
+
             }
         });
 

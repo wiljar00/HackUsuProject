@@ -1,18 +1,22 @@
 package example;
 
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
+import javafx.scene.text.Text;
+import javafx.scene.text.TextAlignment;
 
-public class TitlePage  {
-    public VBox sceneView1(Label label, Button button) {
+public class TitlePage extends HBox {
 
-        // Layout 1 - children are laid out in vertical column
-        VBox layout1 = new VBox(20);
-        layout1.getChildren().addAll(label, button);
-
-        return layout1;
-    }
 
 
 }
