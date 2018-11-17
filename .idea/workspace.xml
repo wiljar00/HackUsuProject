@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e326415b-c717-48ac-9a32-f480ad5996c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HackUsuProject/sample/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HackUsuProject/sample/GamePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HackUsuProject/sample/HighScores.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HackUsuProject/sample/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HackUsuProject/sample/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HackUsuProject/sample/TitlePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HackUsuProject/sample/sample.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/GamePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/HighScores.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/TitlePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HackUsuProject/example/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HackUsuProject/example/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HackUsuProject/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HackUsuProject/example/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HackUsuProject/example/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HackUsuProject/example/css/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/example/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/example/css/stylesheet.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,22 +17,26 @@
     <session id="1055676569">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="png" value="1" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="Image" value="1" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="86" />
+          <entry key="css" value="11" />
+          <entry key="java" value="420" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="86" />
+          <entry key="CSS" value="11" />
+          <entry key="JAVA" value="420" />
         </counts>
       </usages-collector>
     </session>
@@ -54,22 +49,27 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/example/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+            <state relative-caret-position="208">
+              <caret line="34" column="11" lean-forward="true" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#446#636#0" expanded="true" />
-                <element signature="e#635#636#0" expanded="true" />
+                <element signature="e#778#969#0" expanded="true" />
+                <element signature="e#968#969#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/example/css/pig-transparent-toon.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3270">
-              <caret line="218" column="38" lean-forward="true" selection-start-line="218" selection-start-column="38" selection-end-line="218" selection-end-column="38" />
+            <state relative-caret-position="3285">
+              <caret line="219" column="38" lean-forward="true" selection-start-line="219" selection-start-column="38" selection-end-line="219" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -78,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/src/example/css/stylesheet.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+              <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -138,6 +138,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/example/css/stylesheet.css" />
         <option value="$PROJECT_DIR$/src/example/Main.java" />
       </list>
     </option>
@@ -196,7 +197,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542412971963" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542415522358" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -241,12 +242,12 @@
       <option name="presentableId" value="Default" />
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
-      <workItem from="1542408786830" duration="3406000" />
+      <workItem from="1542408786830" duration="5793000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="883000" />
+    <option name="totallyTimeSpent" value="3270000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="825" extended-state="0" />
@@ -327,26 +328,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3270">
-          <caret line="218" column="38" lean-forward="true" selection-start-line="218" selection-start-column="38" selection-end-line="218" selection-end-column="38" />
+        <state relative-caret-position="3285">
+          <caret line="219" column="38" lean-forward="true" selection-start-line="219" selection-start-column="38" selection-end-line="219" selection-end-column="38" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/example/css/pig-transparent-toon.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/example/css/stylesheet.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/example/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+        <state relative-caret-position="208">
+          <caret line="34" column="11" lean-forward="true" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#446#636#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#778#969#0" expanded="true" />
+            <element signature="e#968#969#0" expanded="true" />
           </folding>
         </state>
       </provider>
